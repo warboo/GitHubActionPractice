@@ -45,8 +45,11 @@
     }, n.p = "", n(n.s = 0)
 }([function(e, t) {
     const n = (e = new Date) => ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][e.getDay()];
+    const r = (e = new Date) => ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][e.getMonth()];
     try {
         document.getElementById("day").innerText = n()
+        document.getElementById("month").innerText = r()
     } catch (e) {}
     t.dayOfTheWeek = n
+    t.monthOfTheYear = r
 }]);
